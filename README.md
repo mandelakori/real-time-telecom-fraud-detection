@@ -16,4 +16,4 @@ Unauthorized use or deployment outside of permissions granted by the owner is pr
 
 For usage inquiries, please contact mandelakorilogan@gmail.com
 
-© 2024 Mandela Logan. All rights reserved.
+© 2025 Mandela Logan. All rights reserved.
