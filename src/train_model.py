@@ -6,6 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, f1_score
 import joblib
 from preprocessing import clean_text
+import numpy as np
 
 # data loading and processing
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,10 +35,18 @@ print(report)
 
 # calculate weighted F1-score
 f1 = f1_score(y_test, y_pred, average='weighted')
-threshold = 0.90 
+threshold = 0.90  # only save if F1 >= 90%
+
+# optional: inspect average probabilities for each class on test set
+probs = model.predict_proba(X_test_vec)
+classes = model.classes_
+avg_probs = {cls: np.mean(probs[:, i]) for i, cls in enumerate(classes)}
+print("Average prediction probabilities on test set:")
+for cls, prob in avg_probs.items():
+    print(f"  {cls}: {prob:.3f}")
 
 # model save
-if f1 >= threshold: #model only saved if f1 score >= 90% accuracy
+if f1 >= threshold:
     os.makedirs(os.path.join(BASE_DIR, 'models'), exist_ok=True)
     joblib.dump(model, os.path.join(BASE_DIR, 'models', 'fraud_classifier.pkl'))
     joblib.dump(vectorizer, os.path.join(BASE_DIR, 'models', 'vectorizer.pkl'))
