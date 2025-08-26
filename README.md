@@ -1,12 +1,16 @@
-# Real-Time Telecom Fraud Detection
+# Static Fraud Detection
 
-A simulated system for detecting anomalous calls and potential telecom fraud in real time. This project demonstrates real-time event processing and anomaly detection using simulated call data.
+## Overview
 
-## Features
-- Detects suspicious calls and patterns
-- Simulated live call events with metadata (caller ID, duration, location, frequency)
-- Rule-based and machine learning anomaly detection
-- Stores flagged events for review
+**Static Fraud Detection** is a machine learning project designed to classify SMS/text messages as either **fraudulent** (scam/phishing) or **normal** (legitimate).  
+The system uses **natural language processing (NLP)** techniques and **supervised machine learning** models to detect fraudulent message patterns such as fake banking requests, lottery scams, and phishing attempts.
+
+## Goals
+
+- Develop a clean and reproducible pipeline for fraud detection.
+- Compare baseline and advanced ML models on fraud classification tasks.
+- Deploy a simple API that classifies incoming messages.
+
 
 ## Demo
 All data is **simulated**. No real telecom data is used. This project is for demonstration purposes only and is **not intended for deployment** outside the scope of the owner.
