@@ -13,7 +13,10 @@ The system uses **natural language processing (NLP)** techniques and **supervise
 
 
 ## Demo
-All data is **simulated**. No real telecom data is used. This project is for demonstration purposes only and is **not intended for deployment** outside the scope of the owner.
+
+All data is **simulated or publicly available**. No real telecom or sensitive customer data is used.  
+This project is for demonstration and research purposes only and is **not intended for deployment** in production environments.
+
 
 ## License  
 Unauthorized use or deployment outside of permissions granted by the owner is prohibited.
