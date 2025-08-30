@@ -11,6 +11,11 @@ The system uses **natural language processing (NLP)** techniques and **supervise
 - Compare baseline and advanced ML models on fraud classification tasks.
 - Deploy a simple API that classifies incoming messages.
 
+# Usage Instructions
+```bash
+pip install -r requirements.txt 
+python src/inference.py
+```
 
 ## Demo
 
