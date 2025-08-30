@@ -8,8 +8,6 @@ The system uses **natural language processing (NLP)** techniques and **supervise
 ## Goals
 
 - Develop a clean and reproducible pipeline for fraud detection.
-- Compare baseline and advanced ML models on fraud classification tasks.
-- Deploy a simple API that classifies incoming messages.
 
 # Usage Instructions
 ```bash
